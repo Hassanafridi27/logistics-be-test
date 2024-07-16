@@ -12,8 +12,6 @@ This repository contains the backend code for the FAS Logistics Courier App, dev
 - [API Documentation](#api-documentation)
 - [Testing](#testing)
 - [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Prerequisites
 
