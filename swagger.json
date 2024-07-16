@@ -1,0 +1,64 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "FAS Logistics Courier API",
+      "description": "API for handling user delivery bookings"
+    },
+    "host": "localhost:5000",
+    "basePath": "/api",
+    "schemes": ["http"],
+    "paths": {
+      "/bookings": {
+        "post": {
+          "summary": "Create a new booking",
+          "description": "Create a new delivery booking",
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/Booking"
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Booking created successfully"
+            },
+            "400": {
+              "description": "Invalid input data"
+            },
+            "500": {
+              "description": "Server error"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Booking": {
+        "type": "object",
+        "properties": {
+          "pickupLocation": {
+            "type": "string"
+          },
+          "dropoffLocation": {
+            "type": "string"
+          },
+          "vanType": {
+            "type": "string"
+          },
+          "deliveryTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userId": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+  
