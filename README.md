@@ -36,7 +36,7 @@ Before you begin, ensure you have the following installed:
    
 **Environment Variables**
 Create a .env file in the root directory of the project with the following variables:
-# Example .env file
+# .env file
 PORT=5000
 MONGO_URI=<your_mongodb_connection_string>
 Replace <your_mongodb_connection_string> with your MongoDB connection URI.
